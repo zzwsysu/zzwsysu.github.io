@@ -23,8 +23,8 @@ nginx-1.8.0
 RunHiddenConsole
 
 2. 安装2.1 nginx配置在D盘下建立名为server的目录 D:\server解压nginx-1.8.0.zip至D:\server\nginx-1.8.0找到下面的nginx.exe，在命令行下运行nginx.exe在浏览">
-<meta property="og:image" content="http://yoursite.com/../figures/welcome to nginx.png">
-<meta property="og:updated_time" content="2015-11-22T15:17:09.215Z">
+<meta property="og:image" content="http://yoursite.com/img/welcome to nginx.png">
+<meta property="og:updated_time" content="2015-11-22T15:31:54.253Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="win7下nginx+php+MySQL环境搭建">
 <meta name="twitter:description" content="1. 材料
@@ -89,7 +89,7 @@ RunHiddenConsole
     
     <div class="article-meta">
       <a href="/2015/11/22/win7下nginx+php+MySQL环境搭建/" class="article-date">
-  <time datetime="2015-11-22T15:17:09.215Z" itemprop="datePublished">2015-11-22</time>
+  <time datetime="2015-11-22T15:31:54.253Z" itemprop="datePublished">2015-11-22</time>
 </a>
       
       
@@ -103,7 +103,7 @@ RunHiddenConsole
 <li><a href="http://redmine.lighttpd.net/attachments/660/RunHiddenConsole.zip" target="_blank" rel="external">RunHiddenConsole</a></li>
 </ul>
 <h2 id="2-_安装">2. 安装</h2><h3 id="2-1_nginx配置">2.1 nginx配置</h3><p>在D盘下建立名为server的目录 D:\server<br>解压nginx-1.8.0.zip至D:\server\nginx-1.8.0<br>找到下面的nginx.exe，在命令行下运行nginx.exe<br>在浏览中键入：<a href="http://127.0.0.1" target="_blank" rel="external">http://127.0.0.1</a>, 看到下图所示证明nginx正常工作。</p>
-<p><img src="../figures/welcome to nginx.png" alt="figure1"></p>
+<p><img src="/img/welcome to nginx.png" alt="figure1"></p>
 <p>配置网站根目录<br>在D:\server下建立www目录<br>在www目录下新建一个index.html文件，其内容如下：<br><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;html&gt;</span></span><br><span class="line">    <span class="tag">&lt;head&gt;</span></span><br><span class="line">    <span class="tag">&lt;/head&gt;</span></span><br><span class="line">    <span class="tag">&lt;body&gt;</span></span><br><span class="line">        <span class="keyword">test</span> is ok !  </span><br><span class="line">    <span class="tag">&lt;/body&gt;</span></span><br><span class="line"><span class="tag">&lt;/html&gt;</span></span><br></pre></td></tr></table></figure></p>
 <p>修改D:\server\nginx-1.8.0\conf\nginx.conf<br><figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">location / &#123;</span><br><span class="line">    <span class="preprocessor">#root   html;</span></span><br><span class="line">    root D:\sever\www; <span class="preprocessor">#正反斜杠好像都可以</span></span><br><span class="line">    <span class="keyword">index</span>  <span class="keyword">index</span>.html <span class="keyword">index</span>.htm;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>重新加载nginx配置<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nginx <span class="operator">-s</span> reload</span><br></pre></td></tr></table></figure></p>
