@@ -3,17 +3,37 @@
 <head>
   <meta charset="utf-8">
   
-  <title>你系乜水啊</title>
+  <title>win7下nginx+php+MySQL环境搭建 - 你系乜水啊</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="张大伟">
-<meta property="og:type" content="website">
-<meta property="og:title" content="你系乜水啊">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="材料
+php-5.4.45-nts-Win32-VC9-x86
+mysql-5.5.46-win32
+nginx-1.8.0
+RunHiddenConsole
+
+安装在D盘下建立名为server的目录 D:\server解压nginx-1.8.0.zip至D:\server\nginx-1.8.0找到下面的nginx.exe，在命令行下运行nginx.exe在浏览中键入：http://127.0.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="win7下nginx+php+MySQL环境搭建">
+<meta property="og:url" content="http://yoursite.com/2015/11/22/win7下nginx+php+MySQL环境搭建/index.html">
 <meta property="og:site_name" content="你系乜水啊">
-<meta property="og:description" content="张大伟">
+<meta property="og:description" content="材料
+php-5.4.45-nts-Win32-VC9-x86
+mysql-5.5.46-win32
+nginx-1.8.0
+RunHiddenConsole
+
+安装在D盘下建立名为server的目录 D:\server解压nginx-1.8.0.zip至D:\server\nginx-1.8.0找到下面的nginx.exe，在命令行下运行nginx.exe在浏览中键入：http://127.0.">
+<meta property="og:image" content="http://yoursite.com/../figures/welcome to nginx.png">
+<meta property="og:updated_time" content="2015-11-22T12:45:03.157Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="你系乜水啊">
-<meta name="twitter:description" content="张大伟">
+<meta name="twitter:title" content="win7下nginx+php+MySQL环境搭建">
+<meta name="twitter:description" content="材料
+php-5.4.45-nts-Win32-VC9-x86
+mysql-5.5.46-win32
+nginx-1.8.0
+RunHiddenConsole
+
+安装在D盘下建立名为server的目录 D:\server解压nginx-1.8.0.zip至D:\server\nginx-1.8.0找到下面的nginx.exe，在命令行下运行nginx.exe在浏览中键入：http://127.0.">
   
   
     <link rel="icon" href="/favicon.png">
@@ -53,16 +73,15 @@
     </div>
   </div>
 </header>
-    <section id="main" class="outer">
-      <article id="post-win7下nginx+php+MySQL环境搭建" class="article article-type-post" itemscope itemprop="blogPost">
+    <section id="main" class="outer"><article id="post-win7下nginx+php+MySQL环境搭建" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/22/win7下nginx+php+MySQL环境搭建/">win7下nginx+php+MySQL环境搭建</a>
+    <h1 class="article-title" itemprop="name">
+      win7下nginx+php+MySQL环境搭建
     </h1>
   
 
@@ -90,55 +109,26 @@
     </div>
     
     
-  </div>
-  
-</article>
-
-
-    
-      <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+      <footer class="article-footer">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/22/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      <a href="/2015/11/22/hello-world/" class="article-date">
-  <time datetime="2015-11-22T12:39:35.510Z" itemprop="datePublished">2015-11-22</time>
-</a>
-      
-      
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    
+      </footer>
     
   </div>
   
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/11/22/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World&nbsp;<span>&gt;</span></div>
+    </a>
+  
+</nav>
+
+  
 </article>
 
-
-    </section>
+</section>
     <footer id="footer">
   
   <div class="outer">
