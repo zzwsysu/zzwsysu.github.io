@@ -62,15 +62,15 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/22/win7下nginx+php+MySQL环境搭建/">win7下nginx+php+MySQL环境搭建</a>
+      <a class="article-title" href="/2015/11/23/win7下nginx+php+MySQL环境搭建/">win7下nginx+php+MySQL环境搭建</a>
     </h1>
   
 
       </header>
     
     <div class="article-meta">
-      <a href="/2015/11/22/win7下nginx+php+MySQL环境搭建/" class="article-date">
-  <time datetime="2015-11-22T15:31:54.253Z" itemprop="datePublished">2015-11-22</time>
+      <a href="/2015/11/23/win7下nginx+php+MySQL环境搭建/" class="article-date">
+  <time datetime="2015-11-22T16:26:48.702Z" itemprop="datePublished">2015-11-23</time>
 </a>
       
       
@@ -118,49 +118,6 @@
 <p>在D:\server下新建一个名为start_all_services.bat的批处理文件，此文件内容如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> starting php-cgi...  </span><br><span class="line"><span class="built_in">cd</span> /d D:\server\php-<span class="number">5.4</span>.<span class="number">45</span>-nts-W<span class="keyword">in</span>32-VC9-x86</span><br><span class="line">RunHiddenConsole.exe  php-cgi.exe -b <span class="number">127.0</span>.<span class="number">0.1</span>:<span class="number">9000</span> -c php.ini</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> starting nginx...</span><br><span class="line"><span class="built_in">cd</span> ../</span><br><span class="line"><span class="built_in">cd</span> nginx-<span class="number">1.8</span>.<span class="number">0</span></span><br><span class="line">RunHiddenConsole.exe nginx</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> starting mysql...</span><br><span class="line"><span class="built_in">cd</span> ../</span><br><span class="line"><span class="built_in">cd</span> mysql-<span class="number">5.5</span>.<span class="number">46</span>-win32\bin</span><br><span class="line">mysqld</span><br><span class="line"></span><br><span class="line">PAUSE</span><br></pre></td></tr></table></figure></p>
 <p>在D:\server下新建一个名为stop_all_services.bat的批处理文件，此文件内容如下：<br><figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">echo</span> off</span><br><span class="line"></span><br><span class="line"><span class="keyword">echo</span> stopping nginx...</span><br><span class="line"><span class="winutils">taskkill</span> /F /IM nginx.exe &gt; <span class="stream">nul</span></span><br><span class="line"><span class="keyword">echo</span> stopping php-cgi...</span><br><span class="line"><span class="winutils">taskkill</span> /F /IM php-cgi.exe &gt; <span class="stream">nul</span></span><br><span class="line"><span class="keyword">echo</span> stopping mysql...</span><br><span class="line"><span class="winutils">taskkill</span> /F /IM mysqld.exe &gt; <span class="stream">nul</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">PAUSE</span></span><br></pre></td></tr></table></figure></p>
 <p>需要启动只需双击start_all_services.bat<br>需要关闭只需双击stop_all_services.bat</p>
-
-      
-    </div>
-    
-    
-  </div>
-  
-</article>
-
-
-    
-      <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/22/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      <a href="/2015/11/22/hello-world/" class="article-date">
-  <time datetime="2015-11-22T12:39:35.510Z" itemprop="datePublished">2015-11-22</time>
-</a>
-      
-      
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 
       
     </div>
